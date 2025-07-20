@@ -17,6 +17,9 @@ jobs:
           distribution: 'zulu'
           java-version: '11'
 
+      - name: Give execute permission to gradlew
+        run: chmod +x ./gradlew
+
       - name: Build APK
         run: ./gradlew assembleDebug
 
